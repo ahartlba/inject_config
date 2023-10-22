@@ -64,7 +64,7 @@ def test_custom_loader():
         def __init__(self):
             self.file = Path(__file__).parent / "example_config.json"
 
-        def __call__(self, kwargs):
+        def __call__(self, **kwargs):
             with open(self.file, "r") as f:
                 config = loads(f.read())
             for k, v in kwargs.items():
@@ -73,7 +73,7 @@ def test_custom_loader():
 
     loader = JsonLoader()
 
-    @inject_config.from_loader(loader, kwargs=dict(foo="bar"))
+    @inject_config.from_loader(loader, loader_kwargs=dict(foo="bar"))
     def foo(bar):
         return bar
 

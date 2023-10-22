@@ -77,7 +77,8 @@ class inject_config:
         loader: object,
         first: Optional[bool] = True,
         use_kwarg: Optional[str] = None,
-        kwargs: Optional[dict] = None,
+        loader_args: Optional[tuple] = None,
+        loader_kwargs: Optional[dict] = None,
     ):
         """inject config with custom loader object
 
@@ -93,5 +94,6 @@ class inject_config:
         kwargs: any
             kwargs that get passed through to the loader
         """
-        kwargs = {} if not kwargs else kwargs
-        return cls(loader(kwargs), first, use_kwarg)
+        loader_kwargs = {} if not loader_kwargs else loader_kwargs
+        loader_args = tuple() if not loader_args else loader_args
+        return cls(loader(*loader_args, **loader_kwargs), first, use_kwarg)
