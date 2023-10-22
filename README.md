@@ -1,6 +1,6 @@
 # Config Injection
 
-![Unittest](https://github.com/ahartlba/decorator_validation/actions/workflows/actions.yml/badge.svg?branch=main)
+![Unittest](https://github.com/ahartlba/inject_config/actions/workflows/actions.yml/badge.svg?branch=main)
 ![Static Badge](https://img.shields.io/badge/https%3A%2F%2Fimg.shields.io%2Fbadge%2Fcode%2520style-black-black?label=codestyle)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/inject-config)
 [![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json)](https://python-poetry.org/)
