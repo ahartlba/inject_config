@@ -20,4 +20,4 @@ def run_simulation(sim_config: dict) -> dict:
     start_simulation(sim_config)
 ```
 
-For more examples look at the tests :)
+For more examples look at the tests :) (docs follow soon)
