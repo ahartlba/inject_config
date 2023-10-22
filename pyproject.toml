@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "inject-config"
-version = "0.1.0"
+version = "1.0.0"
 description = "Small Config Injection package"
-authors = ["ahartlba <you@example.com>"]
+authors = ["ahartlba <sorry@nomail.com>"]
 license = "LICENCE"
 readme = "README.md"
 packages = [{include = "inject_config", from="src"}]
