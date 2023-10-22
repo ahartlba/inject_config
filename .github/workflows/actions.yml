@@ -29,9 +29,4 @@ jobs:
           poetry install --with=dev
       - name: Build coverage file
         run: |
-          poetry run pytest --junitxml=pytest.xml --cov=src tests/ | tee pytest-coverage.txt
-      - name: Pytest coverage comment
-        uses: MishaKav/pytest-coverage-comment@main
-        with:
-          pytest-coverage-path: ./pytest-coverage.txt
-          junitxml-path: ./pytest.xml
+          poetry run pytest --junitxml=pytest.xml --cov=src tests/
