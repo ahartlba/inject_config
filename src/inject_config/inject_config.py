@@ -1,5 +1,5 @@
 from functools import wraps
-from typing import Optional
+from typing import Optional, Callable
 from yaml import safe_load
 import json
 
@@ -74,7 +74,7 @@ class inject_config:
     @classmethod
     def from_loader(
         cls,
-        loader: object,
+        loader: Callable,
         first: Optional[bool] = True,
         use_kwarg: Optional[str] = None,
         loader_args: Optional[tuple] = None,
