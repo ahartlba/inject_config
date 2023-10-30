@@ -5,6 +5,7 @@ description = "Small Config Injection package"
 authors = ["ahartlba <sorry@nomail.com>"]
 license = "LICENCE"
 readme = "README.md"
+homepage = "https://github.com/ahartlba/inject_config"
 packages = [{include = "inject_config", from="src"}]
 
 [tool.poetry.dependencies]
